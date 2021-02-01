@@ -8,7 +8,7 @@ The project's aim is to evaluate a single relational system such as PostgreSQL b
 
 2. Brief description of your data generation process 
 
-The main objective of part 1 is to generate data based on the Wiscosin Benchmark specification. The orginal benchmark was composed of three relations (onektup, tenktup1 and tenktup2), each relation was composed of the thirteen integer attributes and three 52 byte string attributes. The three relations or data are generated using a Java. The 'Main.java' file consists of the main code for data generation and the "dbAdapter.java" file in the dao folder consists of the Database connection configurations. The generated data files are placed in a folder named ‘generated_data’.  
+The main objective of part 1 is to generate data based on the Wiscosin Benchmark specification. The orginal benchmark was composed of three relations (onektup, tenktup1 and tenktup2), each relation was composed of the thirteen integer attributes and three 52 byte string attributes. The three relations or data are generated using a Java. The 'Main.java' file consists of the main code for data generation and the "DbAdapter.java" file in the dao folder consists of the Database connection configurations. The generated data files are placed in a folder named ‘generated_data’.  
 
 3. System we are working with and why 
 
