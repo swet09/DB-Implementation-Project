@@ -1,11 +1,11 @@
-package com.dbimpl.dbwiscops;
+package com.dbimpl;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
-import com.dbimpl.dbwiscops.dao.DbAdapter;
+import com.dbimpl.dao.DbAdapter;
 
 public class Main {
 
