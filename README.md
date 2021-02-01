@@ -8,13 +8,13 @@ The project's aim is to evaluate a single relational system such as PostgreSQL b
 
 2. Brief description of your data generation process 
 
-The main objective of part 1 is to generate data based on the Wiscosin Benchmark specification. The orginal benchmark was composed of three relations (onektup, tenktup1 and tenktup2), each relation was composed of the thirteen integer attributes and three 52 byte string attributes. The three relations or data are generated using a Java. The 'Main.java' file consists of the main code for data generation and the "DbAdapter.java" file in the dao folder consists of the Database connection configurations. The generated data files are placed in a folder named ‘generated_data’.  
+The main objective of part 1 is to generate data based on the Wiscosin Benchmark specification. The orginal benchmark was composed of three relations (onektup, tenktup1 and tenktup2), each relation was composed of the thirteen integer attributes and three 52 byte string attributes. The three relations or data are generated using a Java. The 'Main.java' file consists of the main code for data generation and the 'DbAdapter.java' file in the dao folder consists of the Database connection configurations. The generated data files are placed in a folder named ‘generated_data’.  
 
 3. System we are working with and why 
 
 The database system we have chosen to work with is PostgreSQL and for data generation we have decided to write code in the programming language Java, because of our prior knowledge and experience with both PostgreSQL and Java is why we decided to go with them. We plan to develop benchmark comparisons using queries from Wisconsin Benchmark and evaluate against a progress system. We have decided to use a single database system as we want to keep the other parameters such as  main memory, OS load and processor speed constant while testing the database against different parameter values and optimizer options. 
 
-4. Prequisites
+4. Prerequisites
     - Create a VM on GCP
     - Configuring postgres (https://cloud.google.com/community/tutorials/setting-up-postgres)
     - Allow remote ip to connect to postgres server
