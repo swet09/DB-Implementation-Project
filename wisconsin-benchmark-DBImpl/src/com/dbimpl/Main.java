@@ -1,11 +1,11 @@
-package com.dbimpl;
+package com.dbimpl.dbwiscops;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Collections;
 import java.util.Scanner;
 import java.util.ArrayList;
-import com.dbimpl.dao.DbAdapter;
+import com.dbimpl.dbwiscops.dao.DbAdapter;
 
 public class Main {
 
@@ -48,7 +48,7 @@ public class Main {
             try
             {
                 stmnt = conn.createStatement();
-                stmnt.execute("CREATE TABLE "+tablename[j]+"(unique1 integer NOT NULL CONSTRAINT unique1_check check (unique1 between 0 and "+(maxtuples-1)+"),unique2 integer NOT NULL PRIMARY KEY CONSTRAINT unique2_check check (unique2 between 0 and "+(maxtuples-1)+"),unique3 integer NOT NULL CONSTRAINT unique3_check check (unique3 between 0 and "+(maxtuples-1)+"),two integer NOT NULL CONSTRAINT two_check CHECK (two in (0,1)), four integer NOT NULL CONSTRAINT four_check CHECK (four in (0,1,2,3)), ten integer NOT NULL CONSTRAINT ten_check CHECK (ten between 0 and 9),twenty integer NOT NULL CONSTRAINT twenty_check CHECK (twenty between 0 and 19),onepercent integer NOT NULL CONSTRAINT onepercent_check CHECK (onepercent between 0 and 99),tenpercent integer NOT NULL CONSTRAINT tenpercent_check CHECK (tenpercent between 0 and 9),twentypercent integer NOT NULL CONSTRAINT twentypercent_check CHECK(twentypercent in (0,1,2,3,4)),fiftypercent integer NOT NULL CONSTRAINT fiftypercent_check CHECK(fiftypercent in (0,1)), evenOnePercent integer NOT NULL CONSTRAINT evenOnePercent_check CHECK(evenOnePercent between 0 and 198 and evenOnePercent%2=0),oddOnePercent integer NOT NULL CONSTRAINT oddOnePercent_check CHECK(oddOnePercent between 0 and 199 and oddOnePercent%2!=0),stringu1 char(52) NOT NULL, stringu2 char(52) NOT NULL, string4 char(52) NOT NULL,CONSTRAINT "+tablename[j]+"_unique1 UNIQUE (unique1),CONSTRAINT "+tablename[j]+"_unique2 UNIQUE (unique2),CONSTRAINT "+tablename[j]+"_unique3 UNIQUE (unique3),CONSTRAINT "+tablename[j]+"_stringu1 UNIQUE (stringu1),CONSTRAINT "+tablename[j]+"_stringu2 UNIQUE (stringu2))");
+                stmnt.execute("CREATE TABLE "+tablename[j]+"(unique1 integer NOT NULL CONSTRAINT unique1_check check (unique1 between 0 and "+(max_tuples-1)+"),unique2 integer NOT NULL PRIMARY KEY CONSTRAINT unique2_check check (unique2 between 0 and "+(max_tuples-1)+"),unique3 integer NOT NULL CONSTRAINT unique3_check check (unique3 between 0 and "+(max_tuples-1)+"),two integer NOT NULL CONSTRAINT two_check CHECK (two in (0,1)), four integer NOT NULL CONSTRAINT four_check CHECK (four in (0,1,2,3)), ten integer NOT NULL CONSTRAINT ten_check CHECK (ten between 0 and 9),twenty integer NOT NULL CONSTRAINT twenty_check CHECK (twenty between 0 and 19),onepercent integer NOT NULL CONSTRAINT onepercent_check CHECK (onepercent between 0 and 99),tenpercent integer NOT NULL CONSTRAINT tenpercent_check CHECK (tenpercent between 0 and 9),twentypercent integer NOT NULL CONSTRAINT twentypercent_check CHECK(twentypercent in (0,1,2,3,4)),fiftypercent integer NOT NULL CONSTRAINT fiftypercent_check CHECK(fiftypercent in (0,1)), evenOnePercent integer NOT NULL CONSTRAINT evenOnePercent_check CHECK(evenOnePercent between 0 and 198 and evenOnePercent%2=0),oddOnePercent integer NOT NULL CONSTRAINT oddOnePercent_check CHECK(oddOnePercent between 0 and 199 and oddOnePercent%2!=0),stringu1 char(52) NOT NULL, stringu2 char(52) NOT NULL, string4 char(52) NOT NULL,CONSTRAINT "+tablename[j]+"_unique1 UNIQUE (unique1),CONSTRAINT "+tablename[j]+"_unique2 UNIQUE (unique2),CONSTRAINT "+tablename[j]+"_unique3 UNIQUE (unique3),CONSTRAINT "+tablename[j]+"_stringu1 UNIQUE (stringu1),CONSTRAINT "+tablename[j]+"_stringu2 UNIQUE (stringu2))");
 
             } catch (SQLException e)
             {
