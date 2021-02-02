@@ -7,7 +7,7 @@ public class DbAdapter
     /* ---- Connection Variables ---- */
     String jdbUrl = "jdbc:postgresql://35.230.93.148:5432/postgres";
     String username = "postgres";
-    String password = "melcow4#";
+    String password = "Melcow4#";
 
     /* ----Database Variables ---- */
     public Connection conn = null;
