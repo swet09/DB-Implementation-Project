@@ -34,7 +34,7 @@ public class Main {
         {
             System.out.println("Enter table name -");
             tablename[i]=sc.next();
-            System.out.println("Enter nnumber of tuples in the table -");
+            System.out.println("Enter number of tuples in the table -");
             number_of_tuples[i]=sc.nextInt();
         }
         sc.close();
