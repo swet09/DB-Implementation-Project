@@ -1,4 +1,4 @@
-package com.dbimpl.dao;
+package com.dbimpl.dbwiscops.dao;
 
 import java.sql.*;
 
